@@ -1,1 +1,5 @@
 /* For the style of the whole program */
+body {
+    margin: 0;
+    direction: rtl;
+}
