@@ -1,8 +1,11 @@
 import React from 'react';
+import useStyle from './styles'
+
 
 const Layout = () => {
+    const classes = useStyle();
     return (
-        <div>
+        <div className={classes.root}>
 
         </div>
     );
