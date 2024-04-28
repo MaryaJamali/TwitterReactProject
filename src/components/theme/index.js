@@ -19,16 +19,6 @@ const Theme = createTheme({
                 fontFamily: "shabnam !important",
             }
         },
-        MuiListItem: {
-            button: {
-                fontFamily: "shabnam !important",
-            }
-        },
-        MuiButton: {
-            label: {
-                fontFamily: "shabnam !important",
-            }
-        }
     }
 })
 

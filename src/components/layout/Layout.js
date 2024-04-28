@@ -1,13 +1,13 @@
-import React from 'react';
 import useStyle from './styles'
-import Typography from "@material-ui/core/Typography";
-
+import Divider from "@material-ui/core/Divider";
+import RightSidebar from "../rightSidebar/RightSidebar";
 
 const Layout = () => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Typography>توییتر</Typography>
+            <RightSidebar/>
+            <Divider orientation={"vertical"} className={classes.divider}/>
         </div>
     );
 };
