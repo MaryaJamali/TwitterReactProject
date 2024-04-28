@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     hashTagTitle: {
         fontSize: '1.1rem !important',
         fontWeight: "600 !important",
-        marginTop: '3rem !important',
+        marginTop: '4rem !important',
         marginBottom: '1.5rem'
     },
     hashtag: {

@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     },
     leftSidebar: {
         backgroundColor: 'white',
-        width: '25%'
+        width: '25%',
     },
     divider :{
         height : '100%',
