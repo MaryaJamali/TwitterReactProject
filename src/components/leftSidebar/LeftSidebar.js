@@ -19,25 +19,30 @@ const Twitter = ({name, id, img}) => {
 
 const twitter = [
     {
-        name: "Sumsung",
-        id: "sumsung@",
-        img: "/images/samsung.png"
+        name: "پایتون",
+        id: "Python@",
+        img: "/images/Python.png"
     },
     {
-        name: "بیل گیتس",
-        id: "BillGates@",
-        img: "/images/bil.png"
+        name: "جنگو",
+        id: "Django@",
+        img: "/images/Django.png"
     },
     {
-        name: "شرلی ونگ",
-        id: "Shirly_IMC@",
-        img: "/images/shily.png"
+        name: "طراحی وب",
+        id: "WebDesign@",
+        img: "/images/WebDesign.png"
     },
     {
-        name: "مایک بای",
+        name: "جاوااسکریپت",
         id: "Mike_IMC@",
-        img: "/images/mike.png"
-    }
+        img: "/images/JavaScript.png"
+    },
+    {
+        name: "ری اکت",
+        id: "Mike_IMC@",
+        img: "/images/React.png"
+    },
 ]
 const LeftSidebar = () => {
     const classes = useStyle();
@@ -51,7 +56,7 @@ const LeftSidebar = () => {
                 </Grid>
             </Grid>
             <Grid item container direction={"column"} className={classes.twitterRoot}>
-                <Typography className={classes.twitterTitle}>بهترین خبرنگاران</Typography>
+                <Typography className={classes.twitterTitle}>بهترین زبان برنامه نویسی</Typography>
                 <Divider style={{marginLeft: -24, marginRight: -24}}/>
                 {
                     twitter.map((item, index) => {
