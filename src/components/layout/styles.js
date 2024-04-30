@@ -18,6 +18,22 @@ const useStyles = makeStyles({
         backgroundColor:"#7EBAFF !important",
         filter : "opacity(0.5)"
     },
+    content:{
+        flex: 1,
+        overflowY : 'auto',
+        backgroundColor : 'white'
+    },
+    waitParent:{
+        display :'flex',
+        flexDirection : 'column',
+        alignItems:'center',
+        justifyContent:'center',
+        position:'absolute',
+        top:0,
+        left:0,
+        width : '100%',
+        height:'100vh'
+    }
 });
 
 
