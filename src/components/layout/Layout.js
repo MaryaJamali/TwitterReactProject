@@ -4,6 +4,7 @@ import RightSidebar from "../rightSidebar/RightSidebar";
 import LeftSidebar from "../leftSidebar/LeftSidebar";
 import Home from "../../pages/home/Home";
 import TweetsByHashTag from "../../pages/tweetsByHashtag/TweetsByHashTag";
+import TweetsByLanguage from "../../pages/TweetsByLanguage/TweetsByLanguage";
 
 const Layout = () => {
     const classes = useStyle();
@@ -12,7 +13,7 @@ const Layout = () => {
             <RightSidebar/>
             <Divider orientation={"vertical"} className={classes.divider}/>
             <div className={classes.content}>
-                <TweetsByHashTag/>
+                <TweetsByLanguage/>
             </div>
             <Divider orientation={"vertical"} className={classes.divider}/>
             <LeftSidebar/>
