@@ -46,7 +46,7 @@ const TweetsByHashTag = () => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Header title={"پایتون"} icon={<img src={"/images/hashtag.png"}/>}/>
+            <Header title={"پرچم _ داران _ پایتون"} icon={<img src={"/images/hashtag.png"}/>}/>
             <Divider className={classes.divider}/>
             <TweetList data={tweet}/>
         </div>
