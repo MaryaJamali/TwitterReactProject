@@ -1,7 +1,8 @@
 import React from 'react';
 import useStyle from './styles'
 import Divider from "@material-ui/core/Divider";
-import Header from "./component/Header";
+import {Home as HomeIcon} from "@material-ui/icons";
+import Header from "../../components/header/Header";
 import NewTweet from "./component/NewTweet";
 import TweetList from "./component/TweetList";
 
@@ -33,12 +34,21 @@ const tweet = [
         text: 'برنامه نویسی یک هنر است که با کدنویسی نه تنها ماشین‌ها را به کار می‌انگارد، بلکه دیگران را نیز از تفکر شما بهره‌مند می‌سازد. #برنامه_نویسی #هنر',
         like:50,
     },
+    {
+        sender: {
+            name: 'سحر دلیری',
+            id: 'Sahar_Daliry@',
+            img: '/images/person4.png',
+        },
+        text: 'برنامه نویسی یک راه برای ارتباط با دنیای بیرون است. #برنامه_نویسی #ارتباط',
+        like:65
+    },
 ]
 const Home = () => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Header/>
+            <Header title={"خانه"} icon={<HomeIcon/>}/>
             <Divider className={classes.divider}/>
             <NewTweet/>
             <TweetList data={tweet}/>
