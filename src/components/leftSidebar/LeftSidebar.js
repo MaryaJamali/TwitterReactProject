@@ -56,7 +56,7 @@ const LeftSidebar = () => {
                 </Grid>
             </Grid>
             <Grid item container direction={"column"} className={classes.twitterRoot}>
-                <Typography className={classes.twitterTitle}>بهترین زبان برنامه نویسی</Typography>
+                <Typography className={classes.twitterTitle}>بهترین زبان های برنامه نویسی</Typography>
                 <Divider style={{marginLeft: -24, marginRight: -24}}/>
                 {
                     twitter.map((item, index) => {
