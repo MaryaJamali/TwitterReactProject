@@ -5,6 +5,8 @@ import LeftSidebar from "../leftSidebar/LeftSidebar";
 import Home from "../../pages/home/Home";
 import TweetsByHashTag from "../../pages/tweetsByHashtag/TweetsByHashTag";
 import TweetsByLanguage from "../../pages/TweetsByLanguage/TweetsByLanguage";
+import {BrowserRouter, Routes} from 'react-router-dom';
+import Page404 from "../../pages/page404/Page404";
 
 const Layout = () => {
     const classes = useStyle();
