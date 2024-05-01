@@ -3,6 +3,7 @@ import useStyle from './styles'
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import {Link} from "react-router-dom";
 
 
 const hashTags = [
@@ -16,14 +17,16 @@ const RightSidebar = () => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Grid container direction={"row"} alignItems={"center"}>
-                <Grid item> <img src={"/images/logo.png"}/> </Grid>
-                <Grid item>
-                    <Typography className={classes.logoType}>
-                        توییتر فارسی
-                    </Typography>
+            <Link to={"/"}>
+                <Grid container direction={"row"} alignItems={"center"}>
+                    <Grid item> <img src={"/images/logo.png"}/> </Grid>
+                    <Grid item>
+                        <Typography className={classes.logoType}>
+                            توییتر فارسی
+                        </Typography>
+                    </Grid>
                 </Grid>
-            </Grid>
+            </Link>
             <Typography className={classes.hashTagTitle}>
                 داغ ترین هشتک ها
             </Typography>
@@ -31,12 +34,14 @@ const RightSidebar = () => {
                 {
                     hashTags.map(item =>
                         <ButtonBase className={classes.hashTagParent}>
-                            <Grid item container>
-                                <img src={"/images/hashtag.png"}/>
-                                <Typography className={classes.hashtag}>
-                                    {item}
-                                </Typography>
-                            </Grid>
+                            <Link to={"/hashtags/" + item} style={{width: '100%'}}>
+                                <Grid item container>
+                                    <img src={"/images/hashtag.png"}/>
+                                    <Typography className={classes.hashtag}>
+                                        {item}
+                                    </Typography>
+                                </Grid>
+                            </Link>
                         </ButtonBase>
                     )
                 }

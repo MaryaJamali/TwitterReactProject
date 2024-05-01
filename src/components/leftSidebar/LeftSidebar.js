@@ -4,11 +4,12 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import {Link} from "react-router-dom";
 
 
 const Twitter = ({name, id, img}) => {
     const classes = useStyle();
-    return <ButtonBase><Grid container direction={"row"} className={classes.twitterParent}>
+    return <ButtonBase style={{width: "100%"}}><Grid container direction={"row"} className={classes.twitterParent}>
         <img src={img} className={classes.userImg}/>
         <Grid item container direction={"column"} className={classes.twitterNameParent}>
             <Typography className={classes.profName}>{name}</Typography>
@@ -60,10 +61,11 @@ const LeftSidebar = () => {
                 <Divider style={{marginLeft: -24, marginRight: -24}}/>
                 {
                     twitter.map((item, index) => {
-                        return (<React.Fragment><Twitter name={item.name} id={item.id} img={item.img}/>
+                        return (<Link to={`/languages/${item.name}`} style={{width: "100%"}}>
+                            <Twitter name={item.name} id={item.id} img={item.img}/>
                             {index !== twitter.length - 1 &&
                                 <Divider style={{marginLeft: -24, marginRight: -24}}/>}
-                        </React.Fragment>)
+                        </Link>)
                     })
                 }
             </Grid>
