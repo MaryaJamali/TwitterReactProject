@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#7EBAFF',
         filter: 'opacity(0.18)'
     },
-    userImg:{
+    userImg: {
         width: 60,
         height: 60,
         borderRadius: '50%',
@@ -83,6 +83,22 @@ const useStyles = makeStyles(theme => ({
         marginTop: '1rem',
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat'
+    },
+    errorTitle: {
+        marginTop: '10rem',
+        marginBottom: '3rem',
+        textAlign:'center',
+        fontSize: '10rem',
+        fontWeight: 'bold',
+        color: 'red'
+
+    },
+    errorText: {
+        textAlign:'center',
+        fontSize: '1.2rem',
+        fontWeight: 'bold',
+        color: '#624949',
+
     }
 }));
 
