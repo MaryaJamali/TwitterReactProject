@@ -42,11 +42,11 @@ const tweet = [
         like:65
     },
 ]
-const TweetsByHashTag = () => {
+const TweetsByHashTag = (props) => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Header title={"پرچم _ داران _ پایتون"} icon={<img src={"/images/hashtag.png"}/>}/>
+            <Header title={props.match.params.hashtag} icon={<img src={"/images/hashtag.png"}/>}/>
             <Divider className={classes.divider}/>
             <TweetList data={tweet}/>
         </div>

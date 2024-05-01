@@ -43,11 +43,11 @@ const tweet = [
         like:65
     },
 ]
-const TweetsByLanguage = () => {
+const TweetsByLanguage = (props) => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Header title={"پایتون"} icon={<LanguageIcon/>}/>
+            <Header title={props.match.params.name} icon={<LanguageIcon/>}/>
             <Divider className={classes.divider}/>
             <TweetList data={tweet}/>
         </div>
