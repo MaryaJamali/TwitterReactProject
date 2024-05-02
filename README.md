@@ -16,7 +16,7 @@ To use this program, do the following steps :
 ## participation
 🌟To contribute to web application development, first fork the repository. Then commit your changes to a new branch and submit a pull request. ✉
 
-## Notifications 🔊
+## 🔊 Notifications
 This project is definitely not complete because it is only designed to learn and familiarize yourself with React. 😉 Thank you in advance for your comments and suggestions to improve and develop this project. 🙏
 
 ## Author:
