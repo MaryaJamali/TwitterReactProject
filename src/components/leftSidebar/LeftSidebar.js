@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const Twitter = ({name, id, img}) => {
     const classes = useStyle();
     return <ButtonBase style={{width: "100%"}}><Grid container direction={"row"} className={classes.twitterParent}>
-        <img src={img} className={classes.userImg}/>
+        <img src={img} className={classes.userImg} alt={"React"}/>
         <Grid item container direction={"column"} className={classes.twitterNameParent}>
             <Typography className={classes.profName}>{name}</Typography>
             <Typography className={classes.profEmail}>{id}</Typography>
@@ -50,7 +50,7 @@ const LeftSidebar = () => {
     return (
         <div className={classes.root}>
             <Grid container direction={"row-reverse"}>
-                <img src={"/images/user-img.png"} className={classes.userImg}/>
+                <img src={"/images/user-img.png"} className={classes.userImg} alt={"React"}/>
                 <Grid item container direction={"column"} className={classes.profText}>
                     <Typography className={classes.profName}>مریم جمالی</Typography>
                     <Typography className={classes.profEmail}>m.jamali16@yahoo.com</Typography>

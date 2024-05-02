@@ -11,13 +11,13 @@ const NewTweet = () => {
     return (
         <div className={classes.newTweet}>
             <Grid container>
-                <img src={"/images/user-img.png"} className={classes.userImg}/>
+                <img src={"/images/user-img.png"} className={classes.userImg} alt="React"/>
                 <input placeholder={"توییت کن ..."} className={classes.input}/>
             </Grid>
             <Grid container direction={"row-reverse"} style={{marginTop: 16}}>
                 <Button variant={"contained"} color={"primary"} className={classes.newTweetBtn}>توییت</Button>
                 <IconButton className={classes.newTweetImgBtn}>
-                    <img src={"/images/tweetpic.png"} className={classes.newTweetImg}/>
+                    <img src={"/images/tweetpic.png"} className={classes.newTweetImg} alt="React"/>
                 </IconButton>
             </Grid>
         </div>
