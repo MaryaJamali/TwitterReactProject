@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from "./layout/Layout";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from "../pages/home/Home";
 import TweetsByHashTag from "../pages/tweetsByHashtag/TweetsByHashTag";
 import TweetsByLanguage from "../pages/tweetsByLanguage/TweetsByLanguage";
@@ -11,19 +11,20 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={"/"} render={() => {
-                    return <Layout>
-                        <Switch>
-                            <Route exact path={"/"} component={Home}/>
-                            <Route exact path={"/hashtags/:hashtag"} component={TweetsByHashTag}/>
-                            <Route exact path={"/languages/:name"} component={TweetsByLanguage}/>
-                            <Route component={Page404}/>
-                        </Switch>
+                <Route path="/" element={
+                    <Layout>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/hashtags/:hashtag" element={<TweetsByHashTag />} />
+                            <Route path="/languages/:name" element={<TweetsByLanguage />} />
+                            <Route path="*" element={<Page404 />} />
+                        </Routes>
                     </Layout>
-                }}/>
+                } />
             </Routes>
         </BrowserRouter>
     );
 };
+
 
 export default App;
