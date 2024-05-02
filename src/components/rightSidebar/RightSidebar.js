@@ -19,7 +19,7 @@ const RightSidebar = () => {
         <div className={classes.root}>
             <Link to={"/"}>
                 <Grid container direction={"row"} alignItems={"center"}>
-                    <Grid item> <img src={"/images/logo.png"}/> </Grid>
+                    <Grid item> <img src={"/images/logo.png"} alt={"React"}/> </Grid>
                     <Grid item>
                         <Typography className={classes.logoType}>
                             توییتر فارسی
@@ -36,7 +36,7 @@ const RightSidebar = () => {
                         <ButtonBase className={classes.hashTagParent}>
                             <Link to={"/hashtags/" + item} style={{width: '100%'}}>
                                 <Grid item container>
-                                    <img src={"/images/hashtag.png"}/>
+                                    <img src={"/images/hashtag.png"} alt="React"/>
                                     <Typography className={classes.hashtag}>
                                         {item}
                                     </Typography>

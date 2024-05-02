@@ -46,7 +46,7 @@ const TweetsByHashTag = (props) => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <Header title={props.match.params.hashtag} icon={<img src={"/images/hashtag.png"}/>}/>
+            <Header title={props.match.params.hashtag} icon={<img src={"/images/hashtag.png"} alt="React"/>}/>
             <Divider className={classes.divider}/>
             <TweetList data={tweet}/>
         </div>

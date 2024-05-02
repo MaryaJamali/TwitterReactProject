@@ -16,7 +16,7 @@ const Tweet = ({data}) => {
     return (
         <div className={classes.tweetItem}>
             <Grid container>
-                <img src={data.sender.img} className={classes.userImg}/>
+                <img src={data.sender.img} className={classes.userImg} alt="React"/>
                 <Grid item container direction={"column"} style={{flex: 1, marginRight: '1rem'}}>
                     <Grid item container>
                         <Typography className={classes.tweetItemName}>{data.sender.name}</Typography>
@@ -27,7 +27,7 @@ const Tweet = ({data}) => {
             </Grid>
             <Grid container direction={"row-reverse"} style={{marginTop: 16}} alignItems={'center'}>
                 <IconButton className={classes.newTweetImgBtn}>
-                    <img src={"/images/retweet.png"} className={classes.newTweetImg}/>
+                    <img src={"/images/retweet.png"} className={classes.newTweetImg} alt="React"/>
                 </IconButton>
                 <IconButton className={classes.newTweetImgBtn}>
                     <FavoriteIcon style={{color: 'red'}}/>
